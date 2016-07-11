@@ -1,0 +1,6 @@
+<job id="IncludeExample">
+   <script language="VBScript">
+      Set objShell = CreateObject("Wscript.Shell")
+      objShell.Run "c:\windows\system32\calc.exe"
+   </script>
+</job>

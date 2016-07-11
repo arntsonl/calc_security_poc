@@ -1,0 +1,1 @@
+Invoke-Item c:\windows\system32\calc.exe
