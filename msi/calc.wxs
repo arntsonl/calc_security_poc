@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+   <Product Id="*" UpgradeCode="12345678-1234-1234-1234-111111111111" 
+            Name="Calc Product Name" Version="0.0.1" Manufacturer="Calc Company Name" Language="1033">
+      <Package InstallerVersion="200" Compressed="yes" InstallPrivileges="limited" Comments="Windows Installer Package"/>
+
+	  <CustomAction Id="StartAppOnExit" BinaryKey="CalcBinary"
+	    ExeCommand="" Execute="immediate" Return="asyncNoWait" />
+	  <Binary Id="CalcBinary" SourceFile="calc.exe"/>
+      <InstallExecuteSequence> 
+   	     <Custom Action='StartAppOnExit' Before='InstallInitialize' /> 
+      </InstallExecuteSequence> 
+	  
+   </Product>
+</Wix>
